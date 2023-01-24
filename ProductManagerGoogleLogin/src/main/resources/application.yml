@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/loginuserdb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+          clientId: 771413068717-ci8977i2cfm2i28fn8ojgkl4sovebnft.apps.googleusercontent.com
+          clientSecret: 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
+          scope:
+           - email
+           - profile
+server:
+  port: 9090
